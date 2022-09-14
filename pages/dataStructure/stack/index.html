@@ -1,0 +1,667 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>栈 · 数据结构与算法笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tomgou">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../queue/" />
+    
+    
+    <link rel="prev" href="../linkedList/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../gitbook/">
+            
+                <a href="../../gitbook/">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../basicKnowledge/">
+            
+                <a href="../../basicKnowledge/">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../basicKnowledge/forLoop/">
+            
+                <a href="../../basicKnowledge/forLoop/">
+            
+                    
+                    for循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../basicKnowledge/arrMethods/">
+            
+                <a href="../../basicKnowledge/arrMethods/">
+            
+                    
+                    数组方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../basicKnowledge/stringMethods/">
+            
+                <a href="../../basicKnowledge/stringMethods/">
+            
+                    
+                    字符串方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../basicKnowledge/arrayLinkDiff/">
+            
+                <a href="../../basicKnowledge/arrayLinkDiff/">
+            
+                    
+                    数组和链表对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../linkedList/">
+            
+                <a href="../linkedList/">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../queue/">
+            
+                <a href="../queue/">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../heap/">
+            
+                <a href="../heap/">
+            
+                    
+                    堆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../hash/">
+            
+                <a href="../hash/">
+            
+                    
+                    哈希
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../binaryTree/">
+            
+                <a href="../binaryTree/">
+            
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../algorithm/">
+            
+                <a href="../../algorithm/">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../algorithm/doubleIndex/">
+            
+                <a href="../../algorithm/doubleIndex/">
+            
+                    
+                    双指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../algorithm/sort/">
+            
+                <a href="../../algorithm/sort/">
+            
+                    
+                    排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../algorithm/recursion/">
+            
+                <a href="../../algorithm/recursion/">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../algorithm/search/">
+            
+                <a href="../../algorithm/search/">
+            
+                    
+                    搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../algorithm/dynamicProgramming/">
+            
+                <a href="../../algorithm/dynamicProgramming/">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../algorithm/binarySearch/">
+            
+                <a href="../../algorithm/binarySearch/">
+            
+                    
+                    二分查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../algorithm/greedy/">
+            
+                <a href="../../algorithm/greedy/">
+            
+                    
+                    贪心算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../algorithm/bitOperation/">
+            
+                <a href="../../algorithm/bitOperation/">
+            
+                    
+                    位运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >栈</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="stack">Stack</h1>
+<h2 id="&#x6808;&#x7684;&#x7279;&#x70B9;&#xFF1A;&#x540E;&#x5165;&#x5148;&#x51FA;&#xFF08;lifo&#xFF09;">&#x6808;&#x7684;&#x7279;&#x70B9;&#xFF1A;&#x540E;&#x5165;&#x5148;&#x51FA;&#xFF08;LIFO&#xFF09;</h2>
+<h2 id="&#x5355;&#x8C03;&#x6808;&#xFF1A;&#x5355;&#x8C03;&#x9012;&#x589E;&#x6808;&#x548C;&#x5355;&#x8C03;&#x9012;&#x51CF;&#x6808;">&#x5355;&#x8C03;&#x6808;&#xFF1A;&#x5355;&#x8C03;&#x9012;&#x589E;&#x6808;&#x548C;&#x5355;&#x8C03;&#x9012;&#x51CF;&#x6808;</h2>
+<ul>
+<li>&#x5355;&#x8C03;&#x6808;&#x5728;&#x89E3;&#x51B3;&#x524D;&#x540E;&#x5BF9;&#x5E94;&#x7684;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x6709;&#x5947;&#x6548;&#x3002;</li>
+</ul>
+<h2 id="&#x6808;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;">&#x6808;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;</h2>
+<ul>
+<li><p>&#x524D;&#x540E;&#x5BF9;&#x5E94;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x6709;&#x6548;&#x62EC;&#x53F7;&#xFF1A;&#x78B0;&#x5230;&#x5DE6;&#x62EC;&#x53F7;&#x5C06;&#x5176;&#x5165;&#x6808;&#xFF0C;&#x78B0;&#x5230;&#x53F3;&#x62EC;&#x53F7;&#x5C06;&#x6808;&#x9876;&#x5BF9;&#x5E94;&#x7684;&#x5DE6;&#x62EC;&#x53F7;&#x51FA;&#x6218;&#xFF0C;&#x5982;&#x679C;&#x6700;&#x540E;&#x6808;&#x91CC;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#x8BF4;&#x660E;&#x62EC;&#x53F7;&#x6709;&#x6548;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5355;&#x8C03;&#x6808;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;">&#x5355;&#x8C03;&#x6808;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;</h2>
+<ul>
+<li><p>&#x5355;&#x8C03;&#x6808;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x53CC;&#x6307;&#x9488;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3002;</p>
+</li>
+<li><p>&#x524D;&#x540E;&#x5BF9;&#x5E94;&#x7684;&#x6BD4;&#x8F83;&#x9690;&#x6666;&#xFF0C;&#x573A;&#x666F;&#x6BD4;&#x666E;&#x901A;&#x6808;&#x95EE;&#x9898;&#x590D;&#x6742;&#xFF0C;&#x4E00;&#x822C;&#x96BE;&#x5EA6;&#x90FD;&#x4E3A;&#xFF1A;&#x56F0;&#x96BE;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x5F00;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li><p>&#x6700;&#x5927;&#x77E9;&#x5F62;&#x9762;&#x79EF;&#xFF1A;&#x8F6C;&#x5316;&#x4E3A;&#x5355;&#x8C03;&#x9012;&#x589E;&#x6808;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x662F;&#x6C42;&#x5355;&#x4E2A;&#x67F1;&#x5B50;&#x7684;&#x6700;&#x5927;&#x9762;&#x79EF;&#x7684;&#x5DE6;&#x8FB9;&#x754C;&#x5C31;&#x6C38;&#x8FDC;&#x90FD;&#x662F;&#x524D;&#x4E00;&#x4E2A;&#x67F1;&#x5B50;&#xFF0C;&#x5F53;&#x53D1;&#x73B0;&#x65B0;&#x7684;&#x67F1;&#x5B50;&#x9AD8;&#x5EA6;&#x6BD4;&#x6808;&#x9876;&#x5143;&#x7D20;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x627E;&#x5230;&#x4E86;&#x53F3;&#x8FB9;&#x754C;&#xFF0C;&#x4ECE;&#x800C;&#x8BA1;&#x7B97;&#x51FA;&#x8BE5;&#x67F1;&#x5B50;&#x7684;&#x6700;&#x5927;&#x9762;&#x79EF;&#x3002;</p>
+<ul>
+<li><code>&#x7CBE;&#x9AD3;&#xFF1A;[0, ...heights, 0], &#x7B2C;&#x4E00;&#x4E2A;0&#x89E3;&#x51B3;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;0&#x89E3;&#x51B3;&#x6808;&#x7684;&#x6E05;&#x7A7A;&#x95EE;&#x9898;&#x3002;</code></li>
+</ul>
+</li>
+<li><p>&#x63A5;&#x96E8;&#x6C34;&#xFF1A;&#x540C;&#x6837;&#x8F6C;&#x5316;&#x4E3A;&#x5355;&#x8C03;&#x9012;&#x51CF;&#x6808;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x65B0;&#x5143;&#x7D20;&#x5165;&#x6808;&#x4E4B;&#x524D;&#xFF0C;&#x6BD4;&#x8F83;&#x65B0;&#x5143;&#x7D20;&#x4E0E;&#x6808;&#x9876;&#x5143;&#x7D20;&#x7684;&#x5927;&#x5C0F;&#x5173;&#x7CFB;&#xFF0C;&#x5982;&#x679C;&#x65B0;&#x5143;&#x7D20;&#x6BD4;&#x6808;&#x9876;&#x5143;&#x7D20;&#x5927;&#xFF0C;&#x8BF4;&#x660E;&#x627E;&#x5230;&#x4E86;&#x53EF;&#x4EE5;&#x88C5;&#x96E8;&#x6C34;&#x7684;&#x51F9;&#x5730;&#xFF0C;&#x51F9;&#x5730;&#x5143;&#x7D20;&#x4E3A;&#x6808;&#x9876;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x67F1;&#x5B50;&#x3002;&#x96E8;&#x6C34;&#x91CF;&#x7684;&#x8BA1;&#x7B97;&#xFF1A;width * height&#x3002;width &#x4E3A; (&#x5F53;&#x524D;&#x7D22;&#x5F15; i - &#x6808;&#x4E2D;&#x6808;&#x9876;&#x5143;&#x7D20;&#x4E0B;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x5143;&#x7D20;&#x503C; - 1)&#xFF0C;height &#x4E3A; Math.min&#x3010;&#xFF08;&#x5F53;&#x524D;&#x9AD8;&#x5EA6; - &#x6808;&#x9876;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x9AD8;&#x5EA6;&#xFF09;,&#xFF08;&#x6808;&#x4E2D;&#x6808;&#x9876;&#x5143;&#x7D20;&#x4E0B;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x9AD8;&#x5EA6; - &#x6808;&#x9876;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x9AD8;&#x5EA6;&#xFF09;&#x3011;&#x3002;&#x5982;&#x679C;&#x65B0;&#x5143;&#x7D20;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF0C;&#x8BF4;&#x660E;&#x6CA1;&#x6709;&#x8FD8;&#x6CA1;&#x627E;&#x5230;&#x53EF;&#x4EE5;&#x88C5;&#x96E8;&#x6C34;&#x7684;&#x51F9;&#x5730;&#xFF0C;&#x76F4;&#x63A5;&#x5165;&#x6808;&#x5373;&#x53EF;&#x3002;</p>
+<ul>
+<li><p><code>&#x7279;&#x522B;&#x6CE8;&#x610F; width &#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x7528;&#x6808;&#x9876;&#x5143;&#x7D20;&#x524D;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x5143;&#x7D20;&#x3002;</code></p>
+</li>
+<li><p><code>&#x7279;&#x522B;&#x6CE8;&#x610F;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x8981;&#x76F4;&#x63A5;&#x5165;&#x6808;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x6808;&#x9876;&#x5143;&#x7D20;&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x3002;</code></p>
+</li>
+<li><p><code>&#x7279;&#x522B;&#x6CE8;&#x610F;&#x627E;&#x5230;&#x51F9;&#x5730;&#x7684;&#x76EE;&#x6807;&#x5143;&#x7D20;&#xFF0C;&#x6808;&#x5185;&#x81F3;&#x5C11;&#x6709;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5373;&#x5F39;&#x51FA;&#x6808;&#x9876;&#x5143;&#x7D20;&#x540E;&#x6808;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x80FD;&#x4E3A;0&#xFF0C;&#x5426;&#x8005;&#x65E0;&#x6CD5;&#x8BA1;&#x7B97;&#x5BBD;&#x5EA6;&#x3002;</code></p>
+</li>
+<li><p><code>&#x6808;&#x91CC;&#x9762;&#x5B58;&#x7684;&#x662F;&#x4E0B;&#x6807;&#x4E0D;&#x662F;&#x5143;&#x7D20;&#x672C;&#x8EAB;&#x3002;</code></p>
+</li>
+<li><p><code>&#x53EA;&#x8981;&#x60F3;&#x83B7;&#x53D6;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x5148;&#x5224;&#x7A7A;</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="leecode-&#x9898;&#x76EE;&#xFF1A;20&#x3001;84&#x3001;42">LeeCode &#x9898;&#x76EE;&#xFF1A;20&#x3001;84&#x3001;42</h3>
+<h2 id="&#x6808;&#x7684;-js-&#x5B9E;&#x73B0;&#xFF08;&#x6CA1;&#x5375;&#x7528;&#xFF09;">&#x6808;&#x7684; js &#x5B9E;&#x73B0;&#xFF08;&#x6CA1;&#x5375;&#x7528;&#xFF09;</h2>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stack</span> </span>{
+  <span class="hljs-keyword">constructor</span> () {
+    <span class="hljs-keyword">this</span>.items = []
+  }
+
+  push (item) {
+    <span class="hljs-keyword">this</span>.items.push(item)
+  }
+
+  pop () {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.items.pop()
+  }
+
+  peek () {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.items[<span class="hljs-keyword">this</span>.items.length - <span class="hljs-number">1</span>]
+  }
+
+  isEmpty () {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.items.length === <span class="hljs-number">0</span>
+  }
+
+  size () {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.items.length
+  }
+
+  toString() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.items.reverse().join(<span class="hljs-string">&apos;&apos;</span>)
+  }
+}
+
+<span class="hljs-keyword">const</span> decToBin = num =&gt; {
+  <span class="hljs-keyword">const</span> stack = <span class="hljs-keyword">new</span> Stack()
+
+  <span class="hljs-keyword">while</span> (num &gt; <span class="hljs-number">0</span>) {
+    stack.push(num % <span class="hljs-number">2</span>)
+    num = <span class="hljs-built_in">Math</span>.floor(num / <span class="hljs-number">2</span>)
+  }
+
+  <span class="hljs-keyword">return</span> stack.toString()
+}
+
+<span class="hljs-built_in">console</span>.log(decToBin(<span class="hljs-number">10</span>))
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tomgou 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-07-20 18:34:04
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../linkedList/" class="navigation navigation-prev " aria-label="Previous page: 链表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../queue/" class="navigation navigation-next " aria-label="Next page: 队列">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"栈","level":"1.4.2","depth":2,"next":{"title":"队列","level":"1.4.3","depth":2,"path":"pages/dataStructure/queue/index.md","ref":"pages/dataStructure/queue/index.md","articles":[]},"previous":{"title":"链表","level":"1.4.1","depth":2,"path":"pages/dataStructure/linkedList/index.md","ref":"pages/dataStructure/linkedList/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax-pro","github","hide-element","chapter-fold","splitter","-lunr","-search","search-pro","copy-code-button","back-to-top-button","tbfed-pagefooter","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tomgou 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://tomgou.github.io/algorithm-study/"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"tomgou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"数据结构与算法笔记","language":"zh-hans","gitbook":"*","description":"数据结构与算法笔记"},"file":{"path":"pages/dataStructure/stack/index.md","mtime":"2022-07-20T10:34:04.015Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-14T13:47:25.158Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
