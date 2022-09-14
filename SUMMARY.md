@@ -6,6 +6,7 @@
     * [for循环](pages/basicKnowledge/forLoop/index.md)
     * [数组方法](pages/basicKnowledge/arrMethods/index.md)
     * [字符串方法](pages/basicKnowledge/stringMethods/index.md)
+    * [数组和链表对比](pages/basicKnowledge/arrayLinkDiff/index.md)
 * [数据结构](pages/dataStructure/index.md)
     * [链表](pages/dataStructure/linkedList/index.md)
     * [栈](pages/dataStructure/stack/index.md)

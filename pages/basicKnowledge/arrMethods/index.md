@@ -12,7 +12,23 @@
 
 - slice: 返回一个数组的切片副本，不改变原数组
 
-- splice: 删除数组中的一段，并用一个或多个值替换它们
+- splice(start, count, ...newElements): 删除数组中的一段，并用一个或多个值替换它们
+
+    * start: 要删除元素的开始位置，这个元素也要被删除
+    
+    * count: 删除元素的个数
+    
+    * newElements: 用于替换删除元素的新元素，可以试一个或者多个
+
+    * `这个方法的返回值是删除的元素组成的数组，原数组会被改变。`
+
+```js
+const arr = [1, 2, 3, 4, 5]
+const deleteElements = arr.splice(5, 0, 6)
+console.log({deleteElements, arr})
+// deleteElements: []
+// arr: [1, 2, 3, 4, 5, 6]
+```
 
 ## 数组方法的时间复杂度
 
